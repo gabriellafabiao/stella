@@ -1,0 +1,604 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*HEADER*/
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-div {
+    max-width: 1360px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.header a img {
+    width: 190px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu .menu-ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 5px;
+}
+
+.menu .menu-ul li a {
+    color: #000000;
+    font-size: 10px;
+}
+
+.menu .menu-ul li a:hover {
+    font-weight: 800;
+}
+
+.menu-right {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-right-individual {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    gap: 10px
+}
+
+.span-pesquisa {
+    width: 80px;
+    padding-top: 5px;
+}
+
+/*BANNER INICIAL*/
+main{
+    border: 1px solid red;
+}
+.banner-inicial {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.banner-inicial img {
+    width: 100%;
+}
+
+.banner-inicial-conteudos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap:10px
+}
+
+.banner-inicial-conteudos h1,
+.banner-inicial-conteudos h3,
+.banner-inicial-conteudos p {
+    color: white;
+    margin: 0;
+}
+
+.banner-inicial-conteudos h1 {
+    font-size: 85px;
+    font-weight: 600;
+}
+
+.banner-inicial-conteudos h3 {
+    font-weight: 100;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.banner-inicial-conteudos img {
+    width: 120px;
+    padding-bottom: 20px; 
+}
+
+.banner-inicial-conteudos p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-inicial {
+        height: 300px;
+    }
+
+    .banner-inicial-conteudos {
+        width: 80%;
+    }
+    
+    .banner-inicial-conteudos h1 {
+        font-size: 50px;
+    }
+
+    .banner-inicial-conteudos h3 {
+        font-size: 14px;
+    }
+
+    .banner-inicial-conteudos img {
+        width: 80px;
+    }
+
+    .banner-inicial-conteudos p {
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+/*SESSÃO AMAGOLD*/
+.sessao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sessao-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    gap: 40px;
+}
+.sessao-conteudo h1{
+    color: black;
+    font-size: 55px;
+}
+
+.sessao-conteudo p,
+.sessao-conteudo h4 {
+    color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    font-size:14px;
+}
+
+.sessao-img {
+    width: 45%;
+}
+
+.sessao-img img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .sessao {
+    flex-direction: column;
+}
+    .sessao-conteudo {
+    width: 100%;
+    gap: 40px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+    .sessao-conteudo h1{
+    font-size: 30px;
+}
+.sessao-conteudo p,
+.sessao-conteudo h4 {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size:12px;
+}
+    .sessao-img {
+     width: 100%;
+}
+}
+
+/*COMPOSIÇÃO DAS CORES*/
+.comp-cores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin: 80px;
+    text-align: center;
+}
+
+.comp-cores img.anel{
+    padding-top: 20px;
+    width: 35%;
+}
+
+.comp-cores h1{
+    font-size: 40px;
+}
+
+.comp-cores h4, 
+.comp-cores p{
+    font-size: 12px;
+    width: 50%;
+}
+
+.comp-cores p{
+    color: rgb(83, 82, 82);
+    width: 30%;
+}
+.comp-cores img{
+    padding-top: 20px;
+    width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    .comp-cores {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:0;
+}
+.comp-cores img.anel{
+    padding-top: 0px;
+    width: 100%;
+}
+    .comp-cores h1{
+    font-size: 22px;
+}
+.comp-cores h4{
+    width: 100%;
+}
+
+.comp-cores p{
+    width: 100%;
+}
+.comp-cores img{
+    padding-top: 0px;
+    width: 100%;
+}
+}
+
+/*TEOR*/
+
+.teor {
+    position: relative;
+    text-align: center;
+}
+
+.teor img {
+    width: 100%;
+    display: flex;
+}
+
+.teor-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.teor-conteudo h1,
+.teor-conteudo h4,
+.teor-conteudo p {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+
+.teor-conteudo h1{
+    font-size: 120px;
+}
+
+.teor-conteudo h4{
+    font-weight: 400;
+    font-size: 14px;
+    width: 40%;
+}
+
+.teor-conteudo p{
+    font-weight: 100;
+    font-size: 12px;
+    width: 65%;
+}
+
+/*QUILATE OU KARAY*/
+
+.quilate-karat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start; 
+    position: relative;
+    width: 100%;
+}
+
+.quilate-karat-video {
+    position: absolute;
+    top: 0px; 
+    left:15%;
+}
+
+.quilate-karat-texto img{
+    width: 100%;
+}
+
+.quilate-karat-texto  {
+    margin-top:300px;
+    margin-left:700px;
+}
+
+.quilate-karat {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*CORES DO OURO*/
+
+.container-sessao {
+    display:flex;
+    position:relative;
+    margin-left: 223px;
+    margin-right: 223px;
+}
+
+.imagem-fundo {
+    position: relative;
+    left: 25%;
+}
+
+.imagem-fundo img{
+    width: 100%;
+}
+
+.imagem-texto img {
+    width: 60%;
+    position: absolute;
+    left: 40%;
+    top: 300px;
+}
+.anel-dourado {
+    width: 100%;
+    top: 70px;
+    left: 10%;
+    position: absolute;
+}
+
+.anel-dourado img{
+    width:70%
+}
+
+.anel-prata {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 350px;
+}
+
+.anel-prata img{
+    width:70%
+}
+
+.anel-rosa {
+    width: 100%;
+    position: absolute;
+    left: -9%;
+    top: 600px;
+}
+
+.anel-rosa img{
+    width:70%
+}
+
+
+/*ATENDIMENTO*/
+.atendimento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin: 80px;
+    text-align: center;
+}
+
+.atendimento img {
+    width: 20%;
+}
+.atendimento h1 {
+    font-size: 40px;
+}
+
+.atendimento h4 {
+    width: 20%;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .atendimento img{
+    width: 60%;
+    }
+    .atendimento h1 {
+    font-size: 20px;
+   } 
+    .atendimento h4 {
+        width: 100%;
+    }
+}
+/*padrao teor*/
+
+.padrao-teor {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.padrao-teor-desfoque {
+    position:absolute;
+    width:50%;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.065);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index:3
+}
+.padrao-teor-desfoque h1{
+    margin-left:15%;
+    color: white;
+    font-size: 40px;
+}
+
+.padrao-teor-preto {
+    position:absolute;
+    width:50%;
+    height: 100%;
+    left:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.padrao-teor-preto h4, 
+.padrao-teor-preto p{
+    color:white;
+    text-align: left;
+    position: relative;
+    width: 50%;
+    padding: 0;
+    margin-left:48%;
+}
+
+.padrao-teor-preto p{
+    width: 35%;
+}
+
+.padrao-teor-circulo-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 4;
+}
+
+.padrao-teor-circulo {
+    width: 13%;
+    height:28%;
+    border-radius:50%;
+    background-color:black;
+}
+
+.circulo-preto-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index:2
+}
+
+.circulo-preto {
+    width: 30%; 
+    height: 65%;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%); 
+}
+
+.circulo-img-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index:1;
+    right: 10%;
+    
+}
+
+.circulo-img img {
+    width: 60%;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .teor img, .padrao-teor, .quilate-karat-video{
+        display: none;
+    }
+    .mobile{
+        width: 100%;
+    }
+    .teor{
+        display: flex;
+    }
+    .teor-conteudo h1{
+    font-size: 60px;
+   }
+    .teor-conteudo h4{
+    width: 80%;
+}
+    .teor-conteudo{
+        width:100%
+    }
+    .teor-conteudo p{
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .quilate-karat {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start; 
+        position: relative;
+        width: 100%;
+    }
+    .quilate-karat-texto  {
+        margin-top:0px;
+        margin-left:0px;
+    }
+    .quilate-karat {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }    
+}
