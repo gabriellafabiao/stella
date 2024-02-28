@@ -7,36 +7,61 @@
     <title>Ouro</title>
 </head>
 <body> 
-    <!-- <header class="header">
-        <div class="header-div">
-            <a href=""><img src="img/logo/logo.png" alt=""></a>
-            <div class="menu">
-                <ul class="menu-ul">
-                    <li><a href="#">anéis de noivado</a></li>
-                    <li><a href="#">alianças</a></li>
-                    <li><a href="#">joias</a></li>
-                    <li><a href="#">meias alianças</a></li>
-                    <li><a href="#">universo s</a></li>
-                    <li><a href="#">blog</a></li>
-                </ul>
+        <header id="header_novo" class="header">
+            <div class="total desk">
+            <div class="total-in">
+            <div class="anuncio">
+            <div class="titul">
+            NEW IN: JUST SO
             </div>
-            <div class="menu-right">
-                <div class="menu-search menu-right-individual">
-                    <img src="img/icones/search-interface-symbol.png" alt="">
-                    <span>pesquisar</span>
-                    <span class="span-pesquisa"><hr></span>
-                </div>
-                <div class="menu-cart menu-right-individual">
-                    <img src="img/icones/shopping-bag.png" alt="">
-                    <span>minha sacola</span>
-                </div>
-                <div class="menu-user-log menu-right-individual">
-                    <img src="img/icones/user.png" alt="">
-                    <span>entrar</span>
-                </div>
+            <span class="texto">
+            Jewelry is so Special. Just like everyday life.
+            </span>
             </div>
-        </div>
-        </header>-->
+            <div id="timer">
+            <span class="texto">
+            Termina em:
+            </span>
+            <div class="relo">
+            <div id="days">-142<span class="texto">dias</span></div>
+            :
+            <div id="hours">23<span class="texto">horas</span></div>
+            :
+            <div id="minutes">43<span class="texto">minut.</span></div>
+            :
+            <div id="seconds">56<span class="texto">segun.</span></div>
+            </div>
+            </div>
+            </div>
+            </div>
+           <div class="wrapper">
+            <div class="top_content container novo">
+            <a class="logo-new" href="https://stelladiamonds.com.br">
+            <img src="https://stelladiamonds.com.br/wp-content/uploads/2023/10/e8cc6b105adbd724a5a5d6943098370c.png" alt="">
+            </a>
+            <ul class="nav-menu">
+            <li index="0"><a href="https://stelladiamonds.com.br/categorias/aneis-de-noivado/">Anéis de noivado</a></li>
+            <li index="1"><a href="https://stelladiamonds.com.br/categorias/aliancas-de-casamento/">Alianças</a></li>
+            <li index="2"><a href="https://stelladiamonds.com.br/categorias/joias/">Joias</a></li>
+            <li index="3"><a href="https://stelladiamonds.com.br/categorias/meias-aliancas/">Meias alianças</a></li>
+            <li index="4"><a href="https://stelladiamonds.com.br/universo-s/">Universo S</a></li>
+            <li index="5"><a href="https://stelladiamonds.com.br/blog/">Blog</a></li>
+            </ul>
+            <button type="button" onclick="openSearchForm();">
+            <img alt="Busca" src="https://stelladiamonds.com.br/wp-content/themes/ademesmo/assets/img/site/search.svg">
+            <p>PESQUISAR</p>
+            <div class="linha"></div>
+            </button>
+            
+            <div>
+            <a href="https://stelladiamonds.com.br/minha-conta">
+            <img alt="Stella" src="https://stelladiamonds.com.br/wp-content/themes/ademesmo/assets/img/site/favicon2.svg">
+            ENTRAR
+            </a>
+            </div>
+            </div>
+
+        </header>
     <main class="home-container"> <!--alterar o nome da class-->
         <div class="container">
             <div class="banner-inicial">
@@ -66,8 +91,10 @@
                 <img src="/img/sessoes/comp-cores.png">
             </div>
             <div class="teor">
-                <img src="img/banner/Screenshot_3.jpg">
-                <video controls loop src="/img/sessoes/1016 (1).mp4" class="mobile"></video>
+                <img src="img/banner/Screenshot_3.jpg">                
+                <video class="meuVideo mobile" loop>
+                    <source src="/img/sessoes/1016 (1).mp4" type="video/mp4">
+                  </video>                  
                 <div class="teor-conteudo">
                     <h1>TEOR</h1>
                     <h4>NO BRASIL, O PADRÃO DE TEOR É O 18K, TAMBÉM CHAMADO DE 18 QUILATES.</h4>
@@ -75,13 +102,14 @@
                 </div>
             </div>
             <div class="padrao-teor">
-                <img src="img/banner/Screenshot_4.jpg">
+                <img class= "horizontal" src="img/banner/Screenshot_4.jpg">
+                <img class= "vertical"  src="img/banner/Screenshot_4_vertical.jpg">
                 <div class="circulo-preto-cont">
                     <div class="circulo-preto"></div>
                 </div>
                 <div class="circulo-img-cont">
                     <div class="circulo-img">
-                        <img src="img/sessoes/1016 (1).jpg">
+                        <img src="img/sessoes/1016 (1).jpg" id="imagem">
                     </div>
                 </div>
                 <div class="padrao-teor-desfoque">
@@ -97,43 +125,21 @@
                 </div>
             </div>
             <div class="quilate-karat">
-                <div class="quilate-karat-video">
-                    <video controls loop src="/img/sessoes/1016 (1).mp4" ></video>
-                </div>
+                    <video class="meuVideo desktop" loop>
+                        <source src="/img/sessoes/1016 (1).mp4" type="video/mp4">
+                    </video>
                 <div class="quilate-karat-texto">
                     <img src="/img/sessoes/Grupo 276.jpg">       
                 </div>
             </div>
             <div class="container-sessao">
-                <div class="imagem-fundo">
-                    <img class="img1" src="/img/sessoes/16JbGc60b2hg87FxXC87.png">
-                </div>
-                <div class="imagem-texto">
-                    <img src="img/sessoes/Grupo 273.jpg">
-                </div>
-                <div class="anel-dourado">
-                    <img src="img/aneis/Cópia de SD_F6_amarelo_50_topo.png">
-                </div>
-                <div class="anel-prata">
-                    <img src="img/aneis/Cópia de SD_F-1.png">
-                </div>
-                <div class="anel-rosa">
-                    <img src="img/aneis/Cópia de SD_F6_rose_50_topo.png">
-                </div>
-            </div>
-            <!--<div class="container-sessao">
-                <div class="imagem-fundo">
-                    <img class="img1" src="/img/sessoes/16JbGc60b2hg87FxXC87.png">
-                </div>
+                <img class="img1" src="/img/sessoes/16JbGc60b2hg87FxXC87.png">
                 <div class="imagem-texto">
                     <img src="img/sessoes/01.jpg">
-                        <p>fgsdhfjhsjd</p>
-                        <p>fgsdhfjhsjd</p>
-                        <p>fgsdhfjhsjd</p>
                     <div class="img-texo-2">
-                        <p>fgsdhfjhsjd</p>
-                        <p>fgsdhfjhsjd</p>
-                        <p>fgsdhfjhsjd</p>
+                        <h1>CORES DO OURO </h1>
+                        <p>VOCÊ SABIA QUE A COR DO OURO É OBTIDA POR MEIO DA MISTURA DO OUREO PURO COM OUTROS METAIS PRECIOSOS.</p>
+                        <button>LEIA MAIS</button>
                     </div>
                 </div>
                 <div class="anel-dourado">
@@ -144,7 +150,7 @@
                 </div>
                 <div class="anel-rosa">
                     <img src="img/aneis/Cópia de SD_F6_rose_50_topo.png">
-                </div>-->
+                </div>
             </div>
             <div class="atendimento">
                 <img src="img/aneis/MAGIC - 07 - 90 - BR - TOPO.png">
@@ -153,7 +159,160 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="infos"> 
+        <div class="container">
+        <div class="newsletter">
+        <form class="newsletter-form" action="https://api.agenciaade.com.br/email" data-46388308722="true">
+        <div class="content_form">
+        <div>
+        <input id="newsletter_nome" type="text" placeholder="Nome">
+        <input id="newsletter_email" class="email" type="email" placeholder="E-mail">
+        <p>Assine <br> newsletter</p>
+        </div>
+        <button class="newsletter-submit" type="submit">
+        ENVIAR
+        </button>
+        </div>
+        <div class="response alert alert-error card-panel red lighten-1" style="display:none">
+        <p>Não foi possivel concluir o cadastro! 😔</p>
+        <p class="erro-mensagem">Verfique os campos e tente novamente mais tarde...</p>
+        </div>
+        <div class="response alert alert-success card-panel green lighten-1 " style="display:none">Cadastro realizado com sucesso!</div>
+        <input type="hidden" name="Mkt_Origem" value="google"><input type="hidden" name="Mkt_Midia" value="organic"><input type="hidden" name="Mkt_GAUserid" value="U6QP32M1E2"></form>
+        <div class="text">
+        <p>Stella Diamonds D.G.Cunha Joias LTDA - CNPJ: 27.812.055/0001-52</p>
+        <a target="_blank" href="https://www.google.com/maps/place/Stella+Diamonds/@-25.0958498,-50.1636718,17z/data=!3m1!4b1!4m6!3m5!1s0x94e81bc873c83d53:0x59d3fcffc9321ff7!8m2!3d-25.0958547!4d-50.1610915!16s%2Fg%2F11h201tbcm?entry=ttu">R. Dr. Colares, 532 - A - Centro, Ponta Grossa - PR, 84010-010</a>
+        <a href="tel: +554230254127">TELEFONE: (42) 3025-4127</a>
+        <a href="mailto: contato@stelladiamonds.com.br">EMAIL: contato@stelladiamonds.com.br</a>
+        <p>Stella Diamonds. Todos os direitos reservados</p>
+        </div>
+        </div>
+        <div class="site-map">
+        <div class="links">
+        <div class="navegacao">
+        <h2>Navegação</h2>
+        <nav>
+        <ul>
+        <li>
+        <a href="https://www.instagram.com/stella.diamonds/" target="_blank">Instagram</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/nossa-historia/">Quem somos / Contato</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/universo-s#faq">Faq</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/politica-de-privacidade">Política de Privacidade</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/termos-e-condicoes">Termos e condições</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/blog/">Blog</a>
+        </li>
+        </ul>
+        </nav>
+        </div>
+        <div class="categorias">
+        <h2>Categorias</h2>
+        <nav>
+        <ul>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/stella-d-lab">Stella D. Lab</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/voucher">Voucher</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/aliancas-de-casamento">Alianças de Casamento</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/aneis-de-noivado">Anéis de Noivado</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/joias">Joias</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/meias-aliancas">Meias Alianças</a>
+        </li>
+        <li>
+        <a href="https://stelladiamonds.com.br/categorias/little-diamonds">Little Diamonds</a>
+        </li>
+        </ul>
+        </nav>
+        </div>
+        </div>
+        <div class="selos">
+        <div class="site-blindado">
+        
+        </div>
+        <div class="google">
+        <a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/?hl=pt-BR#url=https://www.stelladiamonds.com.br" target="_blank">
+        
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 153 55" enable-background="new 0 0 153 55" xml:space="preserve">
+        <path opacity="" fill="#FDFEFF" stroke="#E0E1E0" stroke-miterlimit="10" d="M152.66 51.38c0 1.54-.69 2.79-1.53 2.78H2.33c-.85 0-1.54-1.24-1.54-2.78V3.28C.8 1.73 1.5.5 2.33.5h148.8c.84 0 1.53 1.24 1.53 2.77v48.11z"></path>
+        <path fill="#6BBE5E" d="M24.23 47.64V10.92H8.66V22.7S7.5 39.05 24.23 47.64z"></path>
+        <path fill="#339044" d="M24.23 47.64V10.92h15.42V22.7s1.14 16.34-15.42 24.93z"></path>
+        <path fill="#DFE0E0" d="M39.65 10.92h-31V6.97s.49-1.63 2.38-1.89H37.3s1.76.32 2.35 2.12l-.01 3.72z"></path>
+        <circle fill="#FFF" cx="12.4" cy="8.01" r=".94"></circle>
+        <circle fill="#FFF" cx="15.77" cy="8.01" r=".94"></circle>
+        <circle fill="#FFF" cx="23.96" cy="22.16" r="5.19"></circle>
+        <path fill="#FFF" d="M24.2 41.77l-3.15-3.19s3.1-2.7 6.23 0l-3.08 3.2zM19.8 37.14l-1.03-1.32s4.8-4.38 10.74-.2l-.98 1.35s-4.52-3.51-8.73.17z"></path>
+        <path fill="#FFF" d="M31.05 32.19l-.67 1.62s-6.59-4.48-12.48.23l-.77-1.68s6.42-5.03 13.92-.17z"></path>
+        <path fill="#547DBF" d="M58.26 16.59v3.33h7.96a7.06 7.06 0 0 1-1.81 4.2 8.14 8.14 0 0 1-6.15 2.43 8.73 8.73 0 0 1-8.72-8.85 8.73 8.73 0 0 1 14.72-6.47L66.6 8.9a11.5 11.5 0 0 0-8.34-3.38c-6.7 0-12.35 5.47-12.35 12.18 0 6.7 5.64 12.17 12.35 12.17 3.63 0 6.36-1.19 8.5-3.4 2.19-2.2 2.88-5.3 2.88-7.79 0-.77-.05-1.48-.17-2.08h-11.2z"></path>
+        <path fill="#E94636" d="M79.59 13.88a7.75 7.75 0 0 0-7.9 7.87 7.77 7.77 0 0 0 7.9 7.86 7.76 7.76 0 0 0 7.88-7.86 7.75 7.75 0 0 0-7.88-7.87m0 12.63c-2.39 0-4.44-1.96-4.44-4.76 0-2.83 2.06-4.77 4.44-4.77 2.38 0 4.43 1.94 4.43 4.77 0 2.8-2.05 4.76-4.43 4.76"></path>
+        <path fill="#547DBF" d="M118.26 15.64h-.13a5.45 5.45 0 0 0-4.14-1.76c-3.92 0-7.34 3.43-7.34 7.87 0 4.4 3.42 7.86 7.34 7.86 1.88 0 3.37-.84 4.15-1.79h.12v1.1c0 3-1.62 4.61-4.2 4.61-2.1 0-3.42-1.52-3.96-2.8l-3 1.24a7.48 7.48 0 0 0 6.96 4.64c4.05 0 7.47-2.38 7.47-8.18V14.29h-3.27v1.35zm-3.97 10.87c-2.38 0-4.2-2.03-4.2-4.76 0-2.78 1.82-4.77 4.2-4.77 2.35 0 4.2 2.03 4.2 4.8.01 2.74-1.85 4.73-4.2 4.73"></path>
+        <path fill="#F7BB17" d="M97.18 13.88c-4.35 0-7.9 3.3-7.9 7.87a7.77 7.77 0 0 0 7.9 7.86 7.76 7.76 0 0 0 7.88-7.86 7.75 7.75 0 0 0-7.88-7.87m0 12.63c-2.39 0-4.44-1.96-4.44-4.76 0-2.83 2.06-4.77 4.44-4.77 2.38 0 4.43 1.94 4.43 4.77 0 2.8-2.05 4.76-4.43 4.76"></path>
+        <path fill="#34A750" d="M124.24 5.83h3.4V29.6h-3.4z"></path>
+        <path fill="#E94636" d="M138.12 26.5a4 4 0 0 1-3.82-2.38l10.51-4.34-.35-.9c-.65-1.75-2.65-5-6.72-5-4.05 0-7.42 3.18-7.42 7.87a7.68 7.68 0 0 0 7.8 7.86c3.6 0 5.68-2.21 6.55-3.48l-2.68-1.79a4.5 4.5 0 0 1-3.87 2.17zm-.25-9.67c1.4 0 2.59.72 2.98 1.74l-7.1 2.93c0-3.3 2.34-4.67 4.12-4.67"></path>
+        <text transform="translate(44.9 46.5)" fill="#5E5D5E" font-family="'Arial'" font-size="15">Loja Segura</text>
+        </svg>
+        </a>
+        </div>
+        <div class="cloudflare">
+        <div class="cloudflare-badge cloudflare-badge-type-g cloudflare-badge-skin-dkgray" style="display:block; position:relative; width:89px; height:31px;background:transparent url(https://www.cloudflare.com/static/media/images/web-badges/badges-dkgray.png) no-repeat -482px -0px;"><a href="//www.cloudflare.com" target="_blank" style="display:block;position:absolute;width:100%;height:100%;margin:0;padding:0;top:0;left:0;border:0;font-size:0;color:transparent;line-height:0;cursor:pointer;"></a></div><script type="text/javascript">
+                                    //<![CDATA[
+                                    try {
+                                        window.CloudFlare || function() {
+                                            var a = window.document,
+                                                b = a.createElement("script"),
+                                                a = a.getElementsByTagName("script")[0];
+                                            window.CloudFlare = [];
+                                            b.type = "text/javascript";
+                                            b.async = !0;
+                                            b.src = "//ajax.cloudflare.com/cdn-cgi/nexp/cloudflare.js";
+                                            a.parentNode.insertBefore(b, a)
+                                        }(), CloudFlare.push(function(a) {
+                                            a(["cloudflare/badge"])
+                                        })
+                                    } catch (e$$5) {
+                                        try {
+                                            console.error("CloudFlare badge code could not be loaded. " + e$$5.message)
+                                        } catch (e$$6) {}
+                                    };
+                                    //]]>
+                                </script>
+        </div>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="direitos container">
+        <p>© 2021, Stella Diamonds, Inc. Todos os direitos reservados</p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </footer>
     <script src="/js/script.js"></script>
 </body>
 </html>
