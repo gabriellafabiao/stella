@@ -640,7 +640,7 @@
     position: relative;
     width: 100%;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .quilate-karat video {
@@ -735,18 +735,19 @@
     display: flex;
     position:relative;
     width:100%;
+    top: -50px;
 }
 
 img.img1 {
-    width:17%;
-    margin-left:30%;
+    max-width:227px;
+    margin-left:39%;
 }
 
 .imagem-texto img {
     position: absolute;
-    width: 50%;
-    top: 27%;
-    left: 38%;
+    width: 43%;
+    top: 23%;
+    left: 47%;
 }
 
 .img-texo-2 {
@@ -756,9 +757,9 @@ img.img1 {
     flex-direction: column;
     gap: 30px;
     color: white;
-    width: 50%;
-    top: 45%;
-    left: 38%;
+    width: 43%;
+    top: 41%;
+    left: 47%;
     text-align:center;
 }
 
@@ -779,9 +780,31 @@ img.img1 {
     font-size: 11px;
 }
 
+.anel-dourado img,
+.anel-prata img,
+.anel-rosa img{
+    position: absolute;
+    width:28%;
+    left: 35%;
+    top: 13%;
+}
+
+.anel-prata img,
+.anel-rosa img{
+    width:49%;
+    left: 19%;
+    top: 28%;
+}
+
+.anel-rosa img {
+    left: 12%;
+    top: 50%;
+}
+
 @media only screen and (max-width: 1600px) {
-  .img-texo-2 {
-    top: 41%;
+  .img-texo-2{
+    top:45%;
+    width: 45%;
   }
   .img-texo-2 button{
     width:50%;
@@ -792,27 +815,29 @@ img.img1 {
   .img-texo-2 p{
     font-size:11px;
   }
-}
-
-.anel-dourado img,
-.anel-prata img,
-.anel-rosa img{
+  .imagem-texto img {
+    top: 32%;
+    width: 45%;
+  }
+  .anel-dourado img,
+  .anel-prata img,
+  .anel-rosa img{
     position: absolute;
-    width:30%;
-    left: 28%;
-    top: 18%;
-}
+    width:28%;
+    left: 35%;
+    top: 25%;
+  }
 
-.anel-prata img,
-.anel-rosa img{
-    width:52%;
-    left: 10%;
-    top: 35%;
-}
-
-.anel-rosa img {
-    left: 1%;
-    top: 55%;
+  .anel-prata img,
+  .anel-rosa img{
+    width:49%;
+    left: 19%;
+    top: 38%;
+  }
+  .anel-rosa img {
+    left: 13%;
+    top: 53%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -820,6 +845,7 @@ img.img1 {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      top: 0px;
     }
     img.img1 {
       width:25%;
@@ -832,21 +858,24 @@ img.img1 {
         left: 0%;
     }
     .img-texo-2 {
-        gap: 20px;
+        gap: 0px;
         width:100%;
-        top: 70%;
+        top: 72%;
         left: 0%;
     }
     .img-texo-2 h1{
-        font-size:28px;
+        font-size:20px;
         font-weight: 100;
     }
     .img-texo-2 p{
-        width:70%;
+      margin-top: 8px;
+      font-size:9px;
+      width:70%;
     }
     .img-texo-2 button{
         padding:10px 0px;
-        width: 60%;
+        margin-top: 30px;
+        width: 50%;
     }
     .anel-dourado img,
     .anel-prata img,
@@ -875,7 +904,7 @@ img.img1 {
   align-items: center;
   justify-content: center;
   gap:30px;
-  margin: 200px 50px;
+  margin: 150px 50px;
   text-align: center;
 }
 
